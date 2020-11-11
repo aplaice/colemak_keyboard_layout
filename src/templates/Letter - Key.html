@@ -1,9 +1,16 @@
 <p id="question">Which key corresponds to the letter <b>{{Letter}}</b>?</p>
 
-<div><img src="_colemak_blank.svg"/></div>
+<div class="only_desktop">{{type:Letter}}</div>
+
+<!-- On mobile typing the letter doesn't make any sense, so display a blank keyboard layout, as a visual aide. -->
+<div class="only_mobile"><img src="_colemak_blank.svg"/></div>
+
+
 
 --
 
-<p id="question">Which key corresponds to the letter <b>{{Letter}}</b>?</p>
+<div class="only_desktop">{{FrontSide}}</div>
+
+<p id="question" class="only_mobile">Which key corresponds to the letter <b>{{Letter}}</b>?</p>
 
 <div id="answer">{{Layout}}</div>

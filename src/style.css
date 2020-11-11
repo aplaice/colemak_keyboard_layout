@@ -14,3 +14,8 @@ p.emphasise {
     font-size: 30px;
     text-transform: uppercase;
 }
+
+.mobile .only_desktop,
+:not(.mobile) .only_mobile {
+    display: none !important;
+}
