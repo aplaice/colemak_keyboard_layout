@@ -1,0 +1,7 @@
+* After building you need to manually copy =src/media/_colemak_blank.svg= into =build/Colemak keyboard layout/media/=, and insert it into the list of media files.
+
+#+begin_src bash
+composer build
+cp -a src/media/_colemak_blank.svg 'build/Colemak keyboard layout/media/'
+sed '/"media_files"/ s/$/\n "_colemak_blank.svg",/' -i 'build/Colemak keyboard layout/Colemak keyboard layout.json'
+#+end_src
