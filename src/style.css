@@ -1,0 +1,11 @@
+.card {
+ font-family: Verdana;
+ font-size: 20px;
+ text-align: center;
+ color: black;
+ background-color: white;
+}
+
+#question, p#answer {
+ margin-bottom: 1em;
+}

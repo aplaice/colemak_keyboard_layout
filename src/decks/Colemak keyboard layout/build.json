@@ -1,0 +1,22 @@
+{
+  "deck": {
+    "uuid": "ee212064-7e12-49f6-b32d-d32f38d7ce8d"
+  },
+  "config": {
+    "uuid": "21f35e08-3451-4e88-962b-d6ada57c901e",
+    "name": "Default"
+  },
+  "model": {
+    "uuid": "261b7de5-a359-4390-b574-b87b0da0afe1",
+    "name": "Keyboard layout (and reversed card)"
+  },
+  "fields": [
+    "Letter",
+    "Layout",
+    "Blank layout"
+  ],
+  "templates": [
+    "Key - Letter",
+    "Letter - Key"
+  ]
+}
