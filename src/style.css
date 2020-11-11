@@ -6,12 +6,20 @@
     background-color: white;
 }
 
-#question, p#answer {
-    margin-bottom: 1em;
+/* Margin */
+div.m {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-p.emphasise {
-    font-size: 30px;
+/* Extra margin */
+div.mm {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.emphasise {
+    font-size: 40px;
     text-transform: uppercase;
 }
 
