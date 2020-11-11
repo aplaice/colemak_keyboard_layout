@@ -16,7 +16,7 @@
     "Blank layout"
   ],
   "templates": [
-    "Key - Letter",
-    "Letter - Key"
+    "Letter - Key",
+    "Key - Letter"
   ]
 }
