@@ -1,7 +1,40 @@
-* After building you need to manually copy =src/media/_colemak_blank.svg= into =build/Colemak keyboard layout/media/=, and insert it into the list of media files.
+* Description
+
+This is an [[https://apps.ankiweb.net/][Anki]] deck for remembering the Colemak keyboard layout.
+
+* Use
+** Installation
+
+This deck is managed with [[https://github.com/OnkelTem/anki-dm][anki-dm]]. To install =anki-dm=, you need to run =composer install=.
+
+** Building
+
+This will build the [[https://github.com/Stvad/CrowdAnki][CrowdAnki]] decks.
+
+#+begin_src bash
+composer build
+#+end_src
+
+*** Working around an (apparent) anki-dm bug
+
+After building you need to manually copy =src/media/_colemak_blank.svg= into =build/Colemak keyboard layout/media/=, and insert it into the list of media files. Hence this is the "full" set of build commands:
 
 #+begin_src bash
 composer build
 cp -a src/media/_colemak_blank.svg 'build/Colemak keyboard layout/media/'
 sed '/"media_files"/ s/$/\n "_colemak_blank.svg",/' -i 'build/Colemak keyboard layout/Colemak keyboard layout.json'
 #+end_src
+
+** Importing into Anki
+
+To import into Anki, you need to install the [[https://github.com/Stvad/CrowdAnki][CrowdAnki]] add-on, and then import the directory at =build/Colemak keyboard layout/=.
+
+* Disclaimer
+
+The deck is obviously not intended as a replacement for actual practice of using the keyboard, just as a replacement for hanging up the layout beside your screen (which is what's suggested on the main Colemak website).
+
+* License
+
+All the images (in =src/media/=) are based on https://en.wikipedia.org/wiki/File:KB_US-Colemak.svg, and are hence under CC BY-SA 3.0.
+
+Everything else is released into the public domain (unlicense).
