@@ -3,6 +3,9 @@
 This is an [[https://apps.ankiweb.net/][Anki]] deck for remembering the Colemak keyboard layout.
 
 * Use
+
+Most easily, you can use the [[https://ankiweb.net/shared/info/478248575][shared deck on Ankiweb]]. If you want to build from source, see below!
+
 ** Installation
 
 This deck is managed with [[https://github.com/OnkelTem/anki-dm][anki-dm]]. To install =anki-dm=, you need to run =composer install=.
